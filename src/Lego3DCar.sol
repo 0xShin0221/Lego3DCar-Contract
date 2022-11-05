@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "./interfaces/IWhitelist.sol";
-import "./interfaces/I3dNFTRender.sol";
+import "./interfaces/ILego3DNFTRender.sol";
 
 contract Lego3DCar is ERC721Enumerable, ReentrancyGuard, Ownable {
     /**
@@ -15,7 +15,7 @@ contract Lego3DCar is ERC721Enumerable, ReentrancyGuard, Ownable {
     string _baseTokenURI;
 
     // 3dNFT contract 
-    I3DNFTRenderer public renderer;
+    ILego3DNFTRenderer public renderer;
 
     //  _price is the price of one  NFT
     uint256 public _price = 0.01 ether;
@@ -123,12 +123,12 @@ contract Lego3DCar is ERC721Enumerable, ReentrancyGuard, Ownable {
      * @dev setRender sets the render of the NFT
      */
     function setRenderer(address addr) public onlyOwner {
-        renderer = I3DNFTRenderer(addr);
+        renderer = ILego3DNFTRenderer(addr);
     }
 
     function resetRenderer(address addr) public onlyOwner {
-        renderer = I3DNFTRenderer(address(0));
-        renderer = I3DNFTRenderer(addr);
+        renderer = ILego3DNFTRenderer(address(0));
+        renderer = ILego3DNFTRenderer(addr);
     }
 
     /**
