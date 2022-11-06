@@ -1,16 +1,29 @@
-$ forge create --rpc-url <rpc_url> --private-key <private_key> src/Lego3DNFTRender.sol:Lego3DNFTRender
+## Deployed Contract
 
-Deployer: 0xeF356Fec500CcE6a8a8458605A82e82a41bd29BC
+- NFT Lego 3DCar contract:
 
-Deployed to: 0x224B71bD7AD700Ee4B7790EedDCACB3e75C676C7
+  `0x5B4C18B5c760781bAc268F14B2290Ea2783f7ed0`
 
-Transaction hash: 0x43d47602d4782c9934e4d112cfd103d49d95ebe609cdac17c6e09d0d5e03f0f6
+- tokenURI Logo3DNFTRender contract:
 
-$ forge create --rpc-url <rpc_url> --constructor-args <baseURI> <whitelistContract> --private-key <private_key>
-src/Lego3DCar.sol:Lego3DCar
+  `0x224B71bD7AD700Ee4B7790EedDCACB3e75C676C7`
 
-Deployer: 0xeF356Fec500CcE6a8a8458605A82e82a41bd29BC
+- Threejs and scripts related contract by dom@dhof:
 
-Deployed to: 0xee871C43a413B18bBda7161E41C9474c7F793995
+  `0xA27ce71ce7D92793404B224d3F31043c7F5Fa15b`
 
-Transaction hash: 0x5196a9a722d557975128cffdefe0c1aa7f27ed3ef77ac564290d6db5a0926bcb
+  `0x740E1b93Bf77686B409Adce96341bC4047dA2464`
+
+  `0x248930e364D2B1a0C5b672687080E45e7CaFBB7b`
+
+  `0x03728478F23B6CE057217792A53d9be9eD124e97`
+
+  `0xd4b8AF84DD5C024eB2c0485b27DD5f5266929065`
+
+  `0xa08582200014f3865D61BAF88e12c67CdA023aF9`
+
+  `0x1174727f22A9F80Bc158386BE728Bd81154fa0D8`
+
+  `0x11958611287b1798696d66456a2b5458988822bc`
+
+  `0x6743dBEc9432f098bcB66eAEa7c25Dbece63a2aE`
